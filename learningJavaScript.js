@@ -186,13 +186,252 @@
 //     return n1+n2;
 // }
 
-// console.log(twoNumberSum(2,56));
+// console.log(twoNumberSum(2,56));let message = "Hello I am a string"
+
+// let thatCharacter = message.charAt(4);
+
+// console.log(thatCharacter);
 
 
 
 
 
 
+//-- STRINGS AND METHODS--
+
+// let message = "I am sherjeel amin";
+
+// for(let char of message){
+//     console.log(char);
+// }
+
+// To remove the space or a character in the string
+
+// let message = "I am sherjeel amin";
+
+// for(let char of message){
+//     if(char=== " "){
+//         continue
+//     }
+//     console.log(char)
+// }
+
+
+// COUNT OF ANY CHARACTER IN A STRING
+/*let message = "Hello how are you";
+let count = 0;
+
+for (let char of message){
+    if(char==="e"){
+        count = count + 1; // count ++;
+    }
+}
+console.log(count)*/
+
+// let message = "I am a message"
+//  console.log(message[3]);
+
+
+// Another way to get a string using .length function
+
+// let message = "hello this is a string";
+
+// strLen = message.length;
+
+// for(let i =0;i<strLen; i++){
+//     console.log(message[i]);
+// }
+
+// String method charAt()
+
+// let message = "Hello I am a string"
+
+// let thatCharacter = message.charAt(4);
+
+// console.log(thatCharacter);
+
+// To get the ASCII code of a character
+
+// let char = 'B';
+// let charCode = char.charCodeAt(0);
+// console.log(charCode);
+
+
+// program to get a character from a string then get the ascii value of the extracted char//
+
+// let message = "the is a message"
+// const index = 7
+// const char = message.charAt(index);
+
+// const asciiVal = message.charCodeAt(index);
+
+// console.log(`The ascii value of ${char} is ${asciiVal}`);
+
+// ARRAYS AND ARRAY METHODS
+// NON-PRIMITIVE DATATYPES
+
+// let empName = ["Sherjeel", "Manoj", "Girivel", "Abhishek","Hello", "how", "are", "you"];
+
+// console.log(typeof(empName));
+// console.log(empName);
+
+// We can store an array inside an array and we can also add an object inside an array//
+// let empName1 = ["Sherjeel", "Manoj", "Girivel", "Abhishek",["This", "is", "test"],{empAdd:"chennai"}];
+// console.log(empName1);
+
+// Every item has an idex inside an array similar to that of strings//
+
+// console.log(empName[0]);
+// console.log(empName[1]);
+// console.log(empName[2]);
+// console.log(empName[3]);
+
+// But we cannot get all the elements one by one as we will be repeating the code [DRY-Do not repeat yourself]
+
+// We use a for loop to iterate the items of the array//
+// for (let i=0; i<4;i++)
+// {
+//     console.log(empName[i]);
+// }
+
+
+// How to make the range dynamic
+// WE can do it by finding the lengthof an array using array.length
+
+// let arrLength = empName.length;
+
+// for(let i=0;i<arrLength;i++){
+//     console.log(empName[i]);
+// }
+
+// FOR LET OF method is also used to iterate the array 
+
+// for (let items of empName){
+//     console.log(items);
+// }
+
+// TO GET THE INDEXES -- WE CAN USE FOR LET IN
+
+// for(let items in empName){
+//     console.log([items]);
+// }
+
+
+// Copying or referencing an array-- In this way if we push an element in the second array,the changes are reflected in the first array too because they are both referring to same memory location
+// let arr1 = [1,2,3,4]
+// let arr2=arr1;
+
+// console.log(arr1);
+// console.log(arr2);
+
+// arr2.push(5);
+
+// console.log(arr1);
+// console.log(arr2);
+
+// The solution is using spread operator, it makes sure that the second array does not have anything to do with the first array
+// let arr1 = [1,2,3,4];
+// let arr2 = [...arr1];
+
+// console.log(arr1);
+// console.log(arr2);
+
+// arr2.push(5);
+
+// console.log(arr1);
+// console.log(arr2);
+
+// To understand how it works under the hood --> //
+
+// let arr1 = [1,2,3,4,5]
+// let arr2 = []
+
+// for(let num of arr1){
+//     arr2.push(num);
+// }
+
+// console.log(arr2);
+// arr2.push(7,8);
+// console.log(arr2);
+
+// array concat //
+
+// let arr1 = [1,2,3];
+// let arr2 = [4,5,6];
+// let arr3 = [7,8,9];
+
+// let arr4 = arr1.concat(arr2, arr3);
+
+// console.log(arr4);
+
+// Pop slice and splice
+
+// let arr1 = [1,2,3,4,5]
+
+// arr1.pop()
+
+// console.log(arr1);
+// let value = arr1.slice(1,3);
+// console.log(value);
+
+// splice for inserting element in a array
+
+// let arr1 = ["hello", "how", "are", "you"];
+// arr1.splice(1,0,"sherjeel");
+// console.log(arr1);
+
+// // Spice for deleting element in an array
+
+// let arr2 = ["hello", "how", "are", "you", "today"];
+// arr2.splice(3,2)
+// console.log(arr2);
+
+
+// const sizeAvailable = ["S","M","L", "XL", "XXL"];
+// const readlineSync = require("readline-sync");
+
+// const userSize = readlineSync.question("what is your size?");
+
+// const isSizeAvailable = sizeAvailable.includes(userSize);
+// if(isSizeAvailable)
+// {
+//     console.log("Your size is avaiable");
+// }else{
+//     console.log("Not available");
+// }
+
+// SORTING ARRAYS
+
+// let fruitNames = ["apple", "orange", "mango", "banana", "cherry"];
+// fruitNames.sort();
+// console.log(fruitNames);
+
+// let numbers = [22,47,39,101,3,66,2,54]
+// numbers.sort()
+// console.log(numbers);
+ // The sorting here is not correct because the numbers are getting converted into string and then to their UTF 16 values. Therefore the numbers are not sorted into a proper order. eg the UTF 16 transformation for 11 is lesser than 2. So it will but 11 before 2 while sorting
+
+//  let numbers = [22,47,39,101,3,66,2,54];
+ // inorder to tackle this problem we use a call back function which calculates the difference between the two adjacent numbers and swaps if the result is positive and stays the same if the difference is negative.
+
+//  function diffOfNumbers(a,b)
+//  {
+//     return a-b
+//  }
+
+//  numbers.sort(diffOfNumbers);
+//  console.log(numbers);
+
+// SPLIT AND JOIN
+
+// const inputString = "Sherjeel";
+// const splitStr = inputString.split("");
+// console.log(splitStr);
+
+// const revStr = splitStr.reverse();
+// console.log(revStr);
+// const revJoinedStr = revStr.join("");
+// console.log(revJoinedStr);
 
 
 
