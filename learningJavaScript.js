@@ -569,6 +569,37 @@ console.log(count)*/
 // console.log(area);
 
 
+// this
+
+// const obj = {
+//     userName : "Faiez",
+//     hair:"curly",
+//     add:"sgr",
+//     message : function(){
+//         console.log(this.userName);
+//     }
+// };
+
+// obj.message();
+
+
+// const obj = {
+//     userName : "Faiez",
+//     hair:"curly",
+//     add:"sgr",
+//     message : function(){
+//         function hello(){
+//             console.log(this);
+//         }
+//         hello();
+//     }
+// };
+// obj.message();
+
+
+// The function within the function will refer to the global object which is the window, not the object that is created by us.
+
+
 
 
 
