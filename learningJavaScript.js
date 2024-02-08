@@ -409,10 +409,10 @@ console.log(count)*/
 // let numbers = [22,47,39,101,3,66,2,54]
 // numbers.sort()
 // console.log(numbers);
- // The sorting here is not correct because the numbers are getting converted into string and then to their UTF 16 values. Therefore the numbers are not sorted into a proper order. eg the UTF 16 transformation for 11 is lesser than 2. So it will but 11 before 2 while sorting
+// The sorting here is not correct because the numbers are getting converted into string and then to their UTF 16 values. Therefore the numbers are not sorted into a proper order. eg the UTF 16 transformation for 11 is lesser than 2. So it will but 11 before 2 while sorting
 
 //  let numbers = [22,47,39,101,3,66,2,54];
- // inorder to tackle this problem we use a call back function which calculates the difference between the two adjacent numbers and swaps if the result is positive and stays the same if the difference is negative.
+// inorder to tackle this problem we use a call back function which calculates the difference between the two adjacent numbers and swaps if the result is positive and stays the same if the difference is negative.
 
 //  function diffOfNumbers(a,b)
 //  {
@@ -432,6 +432,142 @@ console.log(count)*/
 // console.log(revStr);
 // const revJoinedStr = revStr.join("");
 // console.log(revJoinedStr);
+
+
+// Destructuring of arrays
+
+// let [a,b,c,courses] = [1,2,3,["html", "css"]];
+// console.log(a);
+// console.log(courses);
+
+// Swap two numbers using arrays
+
+// let a = 10;
+// let b = 15;
+
+// [a,b] = [b,a]
+// console.log(a);
+// console.log(b);
+
+// let arr = [1,2,3,4,["hello", "how", "are", "you"]];
+
+// let [, , , , courses] = arr;
+// console.log(courses);
+
+// Objects
+
+// Object literal
+
+// const personObj = {
+//     userName :"Sherjeel",
+//     userAge: 99,
+//     userAdd : "Chennai",
+//     "is User": "true"
+// }
+
+// console.log(personObj.userAge);
+// console.log(personObj["is User"]);
+
+
+// You can create a key and assign a function in the value or else you can directly create a function which can directly br called as examples below : 
+// const obj = {
+//     hello : function(){
+//         console.log("Hello There");
+//     },
+//     bye(){
+//         console.log("bye bye");
+//     }
+// }
+
+// obj.hello();
+// obj.bye();
+
+// This is called using a function as a property but in the first case the keyword function is used and you must not use a keyword function in the second type of function declaration.
+
+// ADDING A PROPERTY TO AN OBJECT and FETCHING FROM A USER
+
+// const readlineSync = require("readline-sync");
+// const key = readlineSync.question("what do you want to know-");
+// const course = readlineSync.question("Course-");
+// const personObj = {
+//     userName: "Sherjeel",
+//     userAge: 99,
+//     userAdd: "Chennai",
+//     "is User": "true",
+//     [course]:"Not availble"// it will take the value of the input, it acts as a variable which will act a key
+// }
+
+// personObj.state = "TN";
+
+
+// console.log(personObj[key]);
+// console.log(personObj[course]);// the course property shows the key as what the user has written as input
+
+
+// Short hand prop
+
+// function getObj(uname,address){
+
+//     return{
+//         uname:uname,
+//         address:address
+//     }
+    
+// }
+
+// const student1 = getObj("Sherjeel", "chennai");
+// console.log(student1);
+
+// USE OF IN
+
+// const obj = {
+//     name: "sherjeel",
+//     age : 99
+// }
+
+// for(let key in obj){
+//     console.log(key,obj[key]);
+// }
+
+
+// if(0.1+0.3===0.4){
+//     console.log("True");
+// }
+// else{
+//     console.log("Not true");
+// }
+// console.log(0.1+0.3===0.4);
+
+
+// Pushing an propery value from the object into an empty array //
+// const obj = {
+
+//     myName : "Sherjeel",
+//     address : "Chennai",
+    
+// }
+
+// let arr = [];
+// arr.push(obj.myName);
+// console.log(arr);
+
+// console.log(obj);
+
+// Optional chaining
+
+// const myobj = {
+//     myName : "Sherjeel",
+//     lastName : "Amin",
+//     address : {
+//         street : "Karapakkam",
+//         city : "Chennai"
+//     }
+// };
+
+// const area = myobj.address.city.area??"Unknown";
+
+// console.log(area);
+
 
 
 
