@@ -599,8 +599,76 @@ console.log(count)*/
 
 // The function within the function will refer to the global object which is the window, not the object that is created by us.
 
+// setTimeout(function callback()
+// {
+//     console.log("Hello")
+// },4000);
 
 
+// Function borrowing
+
+// const obj1 = {
+//     userName : "Sherjeel"
+// };
+// const obj2 = {
+//     userName : "Giri"
+// };
+// const obj3 = {
+//     userName : "Manoj"
+// };
+
+// function sayHi(degree, year){
+//     console.log("hello", this.userName, degree,year);
+// }
+
+// sayHi.apply(obj1,["ece",2018]);
+// sayHi.call(obj2);
+// sayHi.call(obj3);
 
 
+// Making an object immutable //
+// const obj = {
+//     userName: "Sherjeel",
+// }
 
+// obj.lastName = "Amin"; 
+// obj.address = "chennai";
+// console.log(obj);
+
+// Object.freeze(obj);
+// obj.area = "karapakkam";
+
+// console.log(obj);
+
+
+// console.log("Hello hi");
+// setTimeout(function callback()
+// {
+//     console.log("I am late by 4 secs ... Hello")
+// },4000);
+// console.log("Bye bye");
+
+// Promise
+
+const isRequestSuccess = true;
+
+const db = [
+    {id:1 , userName : "Sherjeel"}, {id:2, userName: "Manoj"} 
+];
+
+let aPromise = new Promise(function(resolve, reject){
+    if (isRequestSuccess){
+        setTimeout(function(){
+            resolve(db)
+        },3000)
+    } else {
+        const error = new Error("Something went wrong");
+        reject(error.message);
+    }
+});
+
+aPromise
+    .then((response)=> console.log(response))
+    .catch(function (err){
+        console.log(err)
+    })
