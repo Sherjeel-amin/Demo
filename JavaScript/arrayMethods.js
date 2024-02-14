@@ -43,7 +43,7 @@ const doubled = nums.map(double);
 console.log(doubled);
 
 // filter()
-const highest = number => number > 5;
+const highest = (number => number > 5);
 const high = nums.filter(highest);
 console.log(high);
 

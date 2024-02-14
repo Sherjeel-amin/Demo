@@ -548,7 +548,7 @@ console.log(count)*/
 // }
 
 // let arr = [];
-// arr.push(obj.myName);
+// arr.push(obj);
 // console.log(arr);
 
 // console.log(obj);
@@ -650,25 +650,48 @@ console.log(count)*/
 
 // Promise
 
-const isRequestSuccess = true;
+// const isRequestSuccess = true;
 
-const db = [
-    {id:1 , userName : "Sherjeel"}, {id:2, userName: "Manoj"} 
-];
+// const db = [
+//     {id:1 , userName : "Sherjeel"}, {id:2, userName: "Manoj"} 
+// ];
 
-let aPromise = new Promise(function(resolve, reject){
-    if (isRequestSuccess){
-        setTimeout(function(){
-            resolve(db)
-        },3000)
-    } else {
-        const error = new Error("Something went wrong");
-        reject(error.message);
-    }
-});
+// let aPromise = new Promise(function(resolve, reject){
+//     if (isRequestSuccess){
+//         setTimeout(function(){
+//             resolve(db)
+//         },3000)
+//     } else {
+//         const error = new Error("Something went wrong");
+//         reject(error.message);
+//     }
+// });
 
-aPromise
-    .then((response)=> console.log(response))
-    .catch(function (err){
-        console.log(err)
-    })
+// aPromise
+//     .then((response)=> console.log(response))
+//     .catch(function (err){
+//         console.log(err)
+//     })
+
+// let arr = [[1,1],[2,3],[4,5]]
+// obj = Object.fromEntries(arr)
+
+// console.log(obj)
+
+
+// const obj = {
+//     userName : "Faiez",
+//     hair:"curly",
+//     add:"sgr",
+//     message : function(){
+//         console.log(this.userName);
+//     }
+// };
+
+// let obj2 = {...obj}
+
+// console.log(obj2)
+// obj2.userName = "Sherjeel"
+// console.log(obj2)
+// console.log(obj)
+

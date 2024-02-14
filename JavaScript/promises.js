@@ -47,7 +47,7 @@ p1.then((value)=>{
 // promise3.then((value)=>
 // 	console.log(value)
 
-// ---------We use promise all api-----------//
+// //---------We use promise all api-----------//
 
 // let arrOfPromises = [promise1, promise2, promise3]
 // let promise = Promise.all(arrOfPromises)
@@ -84,20 +84,20 @@ p1.then((value)=>{
 // 			resolve("payment done")
 // 		}, 4000)
 // 	})
-// 	BookHotel.then((value)=>{
-// 		console.log(value)
+	// BookHotel.then((value)=>{
+	// 	console.log(value)
 
-// 	})
-// 	Payment.then((value)=>{
-// 		console.log(value)
+	// })
+	// Payment.then((value)=>{
+	// 	console.log(value)
 
-// 	})
+	// })
 
-// 	// console.log("Loading please wait....")
-// 	// let hotelB = await BookHotel
-// 	//  let hotelP = await Payment
-// 	// console.log("waiting for payment")
-// 	// return (hotelB,hotelP)
+// 	console.log("Loading please wait....")
+// 	let hotelB = await BookHotel
+// 	 let hotelP = await Payment
+// 	console.log("waiting for payment")
+// 	return (hotelB,hotelP)
 // }
 
 // let a = HotelBooking()
