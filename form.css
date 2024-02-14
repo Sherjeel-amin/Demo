@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    background-image: url("/pexels-kristya-nugraha-1413100\(1\).jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+  
+}
+
+.container {
+    width: 400px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: top;
+    font-size: larger;
+    font-weight: bolder;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(239, 238, 245);
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    border-radius: 45px;
+
+}
+
+button{
+    float: 50px;
+    color: whitesmoke;
+    padding: 15px 20px;
+    font-size: medium;
+    /* background-color: rgb(226, 233, 226); */
+    background-color: rgba(0, 0, 0, 0.45);
+    border-radius: 20px;
+    margin:8px 8px 8px 150px;
+    
+}
+input[type=text]{
+    padding: 15px;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 17px;
+
+}
+label{
+    padding:10px;
+}
+input::placeholder{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 15px;
+}
+button:hover{
+    color: rgb(239, 230, 230);
+    font-size: large;
+    transition: all 0.2s ease-in-out;
+    padding: 15px 18px;
+    border-radius: 25px;
+    
+}
+input:hover{
+    transition: all 0.2s ease-in-out;
+    padding: 15px 17px;
+}
+.col,h3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
