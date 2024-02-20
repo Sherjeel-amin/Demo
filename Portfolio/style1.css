@@ -36,7 +36,7 @@ nav ul li {
 }
 
 body {
-  background-image: url("pexels-dương-nhân-1529881.jpg");
+  background-image: url("/assets/pexels-dương-nhân-1529881.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -238,7 +238,7 @@ form {
 }
 
 .contact-body {
-  background-image: url("pexels-photo-1563355.jpeg");
+  background-image: url("/assets/pexels-photo-1563355.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -247,7 +247,7 @@ form {
 }
 
 .about-body {
-  background-image: url("pexels-photo-1367192.jpeg");
+  background-image: url("/assets/pexels-photo-1367192.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;

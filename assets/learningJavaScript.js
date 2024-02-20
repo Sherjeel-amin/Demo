@@ -695,3 +695,28 @@ console.log(count)*/
 // console.log(obj2)
 // console.log(obj)
 
+
+// const obj = {
+//     userName : "Faiez",
+//     hair:"curly",
+//     add:"sgr",
+//     message : function(){
+//         function hello(){
+//             console.log(this);
+//         }
+//         hello();
+//     }
+// };
+
+// let obj1 = [...obj]
+// console.log(obj1)
+
+// obj = {
+//     userFname : "Sherjeel",
+//     userLname : "Amin",
+//     userAddress: "Srinagar",
+    
+// }
+
+// let person1 = Object.assign({},obj)
+// console.log(person1)

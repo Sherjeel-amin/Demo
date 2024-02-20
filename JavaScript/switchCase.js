@@ -15,3 +15,9 @@ switch(day){
         console.log("Enter valid day!");
 
 }
+
+let readLineSync = require('readline-sync');
+
+let uName = readLineSync.question("What is your name")
+
+console.log(uName)

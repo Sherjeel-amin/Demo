@@ -10,19 +10,22 @@
 
 <body>
 
+    <script defer src="form.js"></script>
+
     <div class="container">
-    <form action="#">
+    <form action="#"  onsubmit="return validation()">
 
         <br>
         <h3> Registration Form</h3><br>
 
         <label class ="col"for="fname">First Name</label>
-        <input type="text" placeholder="Enter your first name"><br>
+        <input type="text" id="input-box-fname" placeholder="First Name" required><br>
         <label class = "col" for="lname">Last Name</label>
-        <input type="text" placeholder="Enter you last name"><br>
+        <input type="text" id="input-box-lname" placeholder="Last Name" ><br>
         <label class = "col "for="Contact">Contact</label>
-        <input type="text" placeholder="Phone Number"><br>
+        <input type="text" id="input-box-contact" placeholder="Phone Number" ><br>
         <button type="submit">Submit</button>
+
 
 
     </form>
