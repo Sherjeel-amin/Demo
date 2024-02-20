@@ -6,9 +6,15 @@
     var_dump($str); // to check the type of the variable
     var_dump($a);
     var_dump($x);
+    
+  
 
     $fruits = array("apple","mango","grapes");
-    print_r($fruits); // to display an array
+    $animals = array("Cow", "Monkey", "Elephant");
+
+    print_r($fruits); // to display an array with line break
+    echo "<br>";
+    print_r($animals);
     
 ?> 
 
