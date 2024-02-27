@@ -42,3 +42,6 @@ let person2 = new Bike("Momin", "Srinagar","- Pulsar N160 -","360")
 
 person1.allDetails()
 person2.allDetails()
+
+
+

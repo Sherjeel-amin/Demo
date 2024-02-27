@@ -1,0 +1,39 @@
+Local storage : 
+localStorage.setItem("myCat", "Tom");
+
+
+The syntax for reading the localStorage item is as follows:
+
+
+const cat = localStorage.getItem("myCat");
+
+
+The syntax for removing the localStorage item is as follows:
+
+
+localStorage.removeItem("myCat");
+
+
+
+
+
+
+Session -- >
+It is a type of web storage that allows you to store key-value pairs locally in users web browser during a session. So if you close the browser, the session storage will also be removed. 
+
+
+// Save data to sessionStorage
+sessionStorage.setItem("key", "value");
+
+
+// Get saved data from sessionStorage
+let data = sessionStorage.getItem("key");
+
+
+// Remove saved data from sessionStorage
+sessionStorage.removeItem("key");
+
+
+// Remove all saved data from sessionStorage
+sessionStorage.clear();
+

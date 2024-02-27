@@ -92,7 +92,7 @@
 // console.log(uarr)
 
 
-//Removing space from a a string and converting it into an array
+// Removing space from a a string and converting it into an array
 // let str = "Hello How are you"
 // let strLen = str.length
 // console.log(strLen)
@@ -132,7 +132,7 @@
 // const {myname:uname,lname:name1}=obj
 // console.log(uname)
 // console.log(name1)
-//nated obj deconstruction
+// nated obj deconstruction
 // let obj2 = {
 // 	name: "GFG",
 // 	add : {
@@ -181,7 +181,7 @@
 // let arr = ['h','css','name','place']
 // arr.splice(2,2,'path')
 // console.log(arr)
-// 
+
 
 // let str = "33"
 // let str2 = "33"
@@ -234,29 +234,66 @@
 
 // console.log(num1+num2)
 
-
-let arr1 = [1,2,3,4,5]
-
-let arr2 = arr1
-console.log(arr2)
-
-let Promise1 = new Promise((resolve,reject)=>{
-    setInterval((value)=>{
-        resolve("This promise has been resolved")
-    },2000)
-    
+isAccepted = false;
+let p1 = new Promise((resolve,reject)=>{
+    if(isAccepted){
+        setTimeout(() => {
+            resolve("Promise 1 resolved")
+        }, 3000);
+    }
+    else{
+        reject(new Error("Something went wrong"));
+    }
 })
 
+p1.then((value)=>{
+    console.log(value);
+}).catch((error)=>{
+    console.error("error has occured", error.message);
+})
+
+// obj1 = {
+//     userName : "Sherjeel",
+//     address : {
+//         city : "Srinagar",
+//         area : "Shalimar",
+//         pin  : 190001
+//     }
+// }
+
+// let {address:{city:theCity}} = obj1;
+
+// theCity = "Shalimar";
+
+// console.log(theCity);
+
+// let str = "abcdefghijkln"
+
+// console.log(str[str.length-1])
+
+// const obj = { foo: "bar", baz: 42 };
+// Iterate through the object without loop
+// console.log(Object.entries(obj));
+// assigns value from one object to another
+// const target = { a: 1, b: 2 };
+// const source = { b: 4, c: 5 };
+
+// const returnedTarget = Object.assign(target, source);
+// console.log(returnedTarget);
+// console.log(target);// same as returnedTarget
 
 
-
-
-
-
-
-
-
-
-
-
+// let obj = {
+//     userName: "Sherjeel",
+//     address: {
+//         city: {
+//             area: {
+//                 mohalla: "barbarshah",
+//                 supply: "maam"
+//             }
+//         }
+//     }
+//  };
+//  const { userName, address: { city: { area: { mohalla:userAddress } } } } = obj;
+//  console.log(userAddress); 
 

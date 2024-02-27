@@ -45,20 +45,42 @@
 
     // echo test();
 
-    echo <<<ME
-      a
-     b
-    c "hello"
-    g h l " " *&(&(^&%&%&
-    d  sd 
-    dsf
-    ds
-    fd
-    spl_autoload_functionss
-\n
-ME;
+//     echo <<<ME
+//       a
+//      b
+//     c "hello"
+//     g h l " " *&(&(^&%&%&
+//     d  sd 
+//     dsf
+//     ds
+//     fd
+//     spl_autoload_functionss
+// \n
+// ME;
+
+// $a = [25] ;
+
+// $b = $a;
+
+// print_r($b);
+// echo "<br>";
+// array_push($a, "50");
+// array_push($b,"30");
 
 
+// print_r($b);
+// echo "<br>";
+// print_r($a);
+
+// Variable variables
+
+// $var = "Sherjeel";
+// $$var = "This is a new var";
+
+// echo $Sherjeel;
+// $str = "My name is";
+
+// echo ("$str sherjeel");
 
 ?>
 

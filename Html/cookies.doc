@@ -1,0 +1,10 @@
+Cookies are small pieces of data that websites store on the browser. They will stay on the browser even if the browser is closed and reopened. They will be removed automatically if they are set with an expiry date.  
+Used for things like language preference of the user, user login credentials, custom ads, users preferences on Ecomm sites.
+
+document.cookie = "name=Sherjeel ; expires = Fri, 23 Feb 2024 23:00:00 UTC";
+
+to View cookies we use -- > console.log(document.cookie);
+
+//To easily delete any cookie, simply set its expiration date as the epoch timestamp:
+
+document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC;

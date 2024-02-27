@@ -1,61 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="stylesheet" href="style1.css"> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="style1.css">
 </head>
+
 <body class="contact-body">
   <script src="contact.js" defer> </script>
-    
-    <nav>
-       <a href="form.html"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/7064f8105512449.5f7b1e51a8e7a.jpg" alt="a logo was here" 
-        height="50px"
-        width="70px"></a> 
-        <h1 style="font-size: medium;">Contact</h1>
-        <ul>
-            <li><a href="index.html" class="style-link">Home</a></li>
-           <li><a href="About.html" class="style-link">About</a> </li>
-          <li><a href="Contact.html"class="style-link-contact">Contact</a></li>
-        </ul>
-    </nav>
-    <div class="form">
-  
 
-<div class="container">
-  <form action="#" onsubmit="return validation()">
-  <div class="row">
-    <div class="col-left">
-      <label for="fname">Full Name</label>
-    </div>
-    <div class="col-right">
-      <input class="contact-input" type="text" id="fname" name="firstname" placeholder="Your name.">
+  <nav>
+    <a href="form.html"><img
+        src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/7064f8105512449.5f7b1e51a8e7a.jpg"
+        alt="a logo was here" height="50px" width="70px"></a>
+    <h1 style="font-size: medium;">Contact</h1>
+    <ul>
+      <li><a href="index.html" class="style-link">Home</a></li>
+      <li><a href="About.html" class="style-link">About</a> </li>
+      <li><a href="Contact.html" class="style-link-contact">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="form">
+
+
+    <div class="container">
+      <form action="#" onsubmit="return validation()">
+        <div class="row">
+          <div class="col-left">
+            <label for="fname">Full Name</label>
+          </div>
+          <div class="col-right">
+            <input class="contact-input" type="text" id="fname" name="firstname" placeholder="Your name.">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-left">
+            <label for="lname">Contact</label>
+          </div>
+          <div class="col-right">
+            <input class="contact-input" type="text" id="lname" name="lastname" placeholder="Phone/Email">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-left">
+            <label for="subject">Message</label>
+          </div>
+          <div class="col-right">
+            <textarea class="contact-input" id="subject" name="subject" placeholder="Write something.."
+              style="height:200px"></textarea>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <input type="submit" value="Submit">
+        </div>
+      </form>
     </div>
   </div>
-  <div class="row">
-    <div class="col-left">
-      <label for="lname">Contact</label>
-    </div>
-    <div class="col-right">
-      <input class="contact-input" type="text" id="lname" name="lastname" placeholder="Phone/Email">
-    </div>
-  </div>
-  
-  <div class="row">
-    <div class="col-left">
-      <label for="subject">Message</label>
-    </div>
-    <div class="col-right">
-      <textarea class="contact-input" id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-    </div>
-  </div>
-  <br>
-  <div class="row">
-    <input type="submit" value="Submit">
-  </div>
-  </form>
-</div>
-</div>
 </body>
+
 </html>
