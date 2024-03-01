@@ -11,6 +11,10 @@
  }
 
  trait Projector {
+
+    public $name;  // -- check if we can use a variable 
+                    // -- check reflection method 
+
     public function projector(){
         echo "It has a projector"; // cannot instantiate just be used 
     }
