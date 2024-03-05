@@ -12,7 +12,7 @@
 
  trait Projector {
 
-    public $name;  // -- check if we can use a variable 
+    public $name= "sherjeel";  // -- check if we can use a variable -- yes we can 
                     // -- check reflection method 
 
     public function projector(){
@@ -53,6 +53,8 @@
  $galaxy->Zpower();
  echo "<br>";
  $galaxy->Ppower();
+
+ echo $galaxy->name;
 
 
 ?>
